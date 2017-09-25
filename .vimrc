@@ -78,7 +78,7 @@ let Tlist_File_Fold_Auto_Close=1 "非当前文件，函数列表折叠隐藏
 let Tlist_Exit_OnlyWindow=1 "当taglist是最后一个分割窗口时，自动推出vim
 let Tlist_Process_File_Always=1 "实时更新tags,是否一直处理tags.1:处理;0:不处理
 let Tlist_Inc_Winwidth=1
-let Tlist_WinWidth=40
+let Tlist_WinWidth=32
 set updatetime=100  "设置taglist更新时间100毫秒
 nmap tl :Tlist<cr>
 

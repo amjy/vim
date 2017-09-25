@@ -44,6 +44,12 @@ hi ccLogicalOperator        gui=NONE cterm=bold ctermfg=green
 hi cLogicalOperatorError    gui=NONE cterm=bold ctermfg=green
 
 "========================================================
+" Highlight Over 80 bytes
+"========================================================
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
+"========================================================
 " Highlight All Comment 
 "========================================================
 hi Comment gui=NONE cterm=bold ctermfg=darkblue
