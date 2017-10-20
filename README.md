@@ -17,4 +17,4 @@ vim config for c coder
 * **bn** `Next Buffer Tab`
 * **bp** `Prev Buffer Tab`
 * **Q** `Close Current Buffer Tab`
-
+* **ms** `Save vim session to .session.vim`
