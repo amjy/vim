@@ -1,9 +1,9 @@
 # vim
-vim config for c coder
+vim config for c/go coders
 
 ## Init
-* cp -r .vim* ~
-* install ctags: `yum install ctags` or `apt-get install ctags` ...
+* `cp -r .vim* ~` or `rm ~/.vim* -rf; ln -s $PWD/.vim* ~/`
+* install ctags: `yum install ctags` or `apt install ctags` ...
 
 ## Keys
 * **F5** `Update TagList`
@@ -18,3 +18,6 @@ vim config for c coder
 * **bp** `Prev Buffer Tab`
 * **Q** `Close Current Buffer Tab`
 * **ms** `Save vim session to .session.vim`
+
+## GoLang
+* [install gotags](https://github.com/jstemmer/gotags.git) and run `:GoInstallBinaries` in vim

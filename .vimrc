@@ -67,8 +67,8 @@ set incsearch
 set hlsearch
 
 "-- ctags setting --
-map <F5> :!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q --language-force=C . <CR><CR>:TlistUpdate<CR>
-imap <F5> <ESC>:!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q --language-force=C .<CR><CR>:TlistUpdate<CR>
+map <F5> :!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q <CR><CR>:TlistUpdate<CR>
+imap <F5> <ESC>:!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q <CR><CR>:TlistUpdate<CR>
 set tags=.tags
 
 "-- Taglist setting --
@@ -86,8 +86,9 @@ nmap tl :Tlist<cr>
 "-- Tagbar setting --
 nmap tb :TagbarToggle<cr>
 let g:tagbar_ctags_bin='ctags'
+let g:tagbar_left=1
 let g:tagbar_width=32
-autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
+autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go call tagbar#autoopen()
 
 "-- WinManager setting --
 let g:winManagerWindowLayout='FileExplorer|TagList'
