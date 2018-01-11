@@ -83,6 +83,12 @@ let Tlist_WinWidth=32
 set updatetime=100
 nmap tl :Tlist<cr>
 
+"-- Tagbar setting --
+nmap tb :TagbarToggle<cr>
+let g:tagbar_ctags_bin='ctags'
+let g:tagbar_width=32
+autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
+
 "-- WinManager setting --
 let g:winManagerWindowLayout='FileExplorer|TagList'
 let g:persistentBehaviour=0
