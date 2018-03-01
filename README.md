@@ -2,7 +2,7 @@
 vim config for c/go coders
 
 ## Init
-* `cp -r .vim* ~` or `rm ~/.vim* -rf; ln -s $PWD/.vim* ~/`
+* `cp -r .vim* ~` or `rm -rf ~/.vim*; ln -s $PWD/.vim* ~/`
 * install ctags: `yum install ctags` or `apt install ctags` ...
 
 ## Keys
@@ -14,6 +14,7 @@ vim config for c/go coders
 * **fu** `Search Function`
 * **fp** `Search File`
 * **tl** `Open or Close TagList`
+* **tb** `Open or Close TagBar`
 * **bn** `Next Buffer Tab`
 * **bp** `Prev Buffer Tab`
 * **Q** `Close Current Buffer Tab`

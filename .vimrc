@@ -81,6 +81,7 @@ let Tlist_Process_File_Always=1
 let Tlist_Inc_Winwidth=1
 let Tlist_WinWidth=32
 set updatetime=100
+set cscopetag
 nmap tl :Tlist<cr>
 
 "-- Tagbar setting --
@@ -88,7 +89,7 @@ nmap tb :TagbarToggle<cr>
 let g:tagbar_ctags_bin='ctags'
 let g:tagbar_left=1
 let g:tagbar_width=32
-autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go call tagbar#autoopen()
+" autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go,*.lua,*.py call tagbar#autoopen()
 
 "-- WinManager setting --
 let g:winManagerWindowLayout='FileExplorer|TagList'
