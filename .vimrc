@@ -41,6 +41,7 @@ set softtabstop=4
 set expandtab
 set smarttab
 set shiftwidth=4
+set noswapfile
 
 "set cindent
 set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s
@@ -89,6 +90,7 @@ nmap tb :TagbarToggle<cr>
 let g:tagbar_ctags_bin='ctags'
 let g:tagbar_left=1
 let g:tagbar_width=32
+let g:tagbar_sort = 0
 " autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go,*.lua,*.py call tagbar#autoopen()
 
 "-- WinManager setting --

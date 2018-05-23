@@ -47,7 +47,7 @@ hi cLogicalOperatorError    gui=NONE cterm=bold ctermfg=green
 " Highlight Over 80 bytes
 "========================================================
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+match OverLength /\%161v.\+/
 
 "========================================================
 " Highlight All Comment 
