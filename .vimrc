@@ -52,6 +52,9 @@ set whichwrap=b,s,<,>,[,]
 
 set mouse=a           " Enable mouse usage (all modes)
 set number            " Enable line number
+set relativenumber
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
 
 set history=50        " set command history to 50
 
@@ -119,8 +122,10 @@ noremap <silent> <F2><F2> :nohl<CR>
 inoremap <silent> <F2><F2> <ESC> :nohl<CR>
 
 "-- hightlight current line --
-set cursorline
 hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=NONE
+set cursorline
+autocmd InsertEnter * :set nocursorline
+autocmd InsertLeave * :set cursorline
 
 "-- auto autocomplete color --
 hi Pmenu ctermfg=black ctermbg=lightgray
@@ -181,9 +186,6 @@ nnoremap fu :CtrlPFunky<Cr>
 " nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 let g:ctrlp_funky_syntax_highlight = 1
 let g:ctrlp_extensions = ['funky']
-
-"-- set paste --
-map <F4> :set paste<Cr>i
 
 "-- save session, save file and quit vim --
 noremap ms :mks! .session.vim<CR>
