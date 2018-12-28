@@ -122,7 +122,7 @@ noremap <silent> <F2><F2> :nohl<CR>
 inoremap <silent> <F2><F2> <ESC> :nohl<CR>
 
 "-- hightlight current line --
-hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=NONE
+"hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=NONE
 set cursorline
 autocmd InsertEnter * :set nocursorline
 autocmd InsertLeave * :set cursorline
