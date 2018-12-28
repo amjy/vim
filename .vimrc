@@ -127,6 +127,9 @@ set cursorline
 autocmd InsertEnter * :set nocursorline
 autocmd InsertLeave * :set cursorline
 
+"-- for docker
+colorscheme default
+
 "-- auto autocomplete color --
 hi Pmenu ctermfg=black ctermbg=lightgray
 hi PmenuSel ctermbg=blue ctermfg=white
