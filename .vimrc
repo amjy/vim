@@ -73,31 +73,20 @@ set hlsearch
 "-- ctags setting --
 map <F5> :!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q <CR><CR>:TlistUpdate<CR>
 imap <F5> <ESC>:!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q <CR><CR>:TlistUpdate<CR>
-set tags=.tags
 
-"-- Taglist setting --
-let Tlist_Ctags_Cmd='ctags'
-let Tlist_Use_Right_Window=0
-let Tlist_Show_One_File=0
-let Tlist_File_Fold_Auto_Close=1
-let Tlist_Exit_OnlyWindow=1
-let Tlist_Process_File_Always=1
-let Tlist_Inc_Winwidth=1
-let Tlist_WinWidth=32
+set tags=.tags
 set updatetime=100
 set cscopetag
-nmap tl :Tlist<cr>
 
 "-- Tagbar setting --
 nmap tb :TagbarToggle<cr>
 let g:tagbar_ctags_bin='ctags'
-let g:tagbar_left=1
+let g:tagbar_left=0
 let g:tagbar_width=32
 let g:tagbar_sort = 0
 " autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go,*.lua,*.py call tagbar#autoopen()
 
 "-- WinManager setting --
-let g:winManagerWindowLayout='FileExplorer|TagList'
 let g:persistentBehaviour=0
 let g:winManagerWidth=32
 nmap wm :WMToggle<cr>

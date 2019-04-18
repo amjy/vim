@@ -13,7 +13,6 @@ vim config for c/go coders
 * **F2 F2** `Clear Highlight`
 * **fu** `Search Function`
 * **fp** `Search File`
-* **tl** `Open or Close TagList`
 * **tb** `Open or Close TagBar`
 * **bn** `Next Buffer Tab`
 * **bp** `Prev Buffer Tab`
