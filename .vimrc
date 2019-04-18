@@ -82,7 +82,7 @@ set cscopetag
 nmap tb :TagbarToggle<cr>
 let g:tagbar_ctags_bin='ctags'
 let g:tagbar_left=0
-let g:tagbar_width=32
+let g:tagbar_width=40
 let g:tagbar_sort = 0
 " autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go,*.lua,*.py call tagbar#autoopen()
 
