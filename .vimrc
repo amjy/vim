@@ -71,8 +71,8 @@ set incsearch
 set hlsearch
 
 "-- ctags setting --
-map <F5> :!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q <CR><CR>:TlistUpdate<CR>
-imap <F5> <ESC>:!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q <CR><CR>:TlistUpdate<CR>
+map <F4> :!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q <CR><CR>:TlistUpdate<CR>
+imap <F4> <ESC>:!ctags -R -f .tags --c-kinds=+p --fields=+iaS --extra=+q <CR><CR>:TlistUpdate<CR>
 
 set tags=.tags
 set updatetime=100
@@ -90,6 +90,14 @@ let g:tagbar_sort = 0
 let g:persistentBehaviour=0
 let g:winManagerWidth=32
 nmap wm :WMToggle<cr>
+
+" developer tools
+map <silent> <F5> :WMToggle<cr>:TagbarToggle<cr>
+imap <silent> <F5> <ESC>:WMToggle<cr>:TagbarToggle<cr>
+
+" copy or paste by system clippers
+nnoremap <silent> <ESC><ESC><ESC> :set mouse=a<cr>:set nu<cr>:set rnu<cr>:set nopaste<cr>
+nnoremap <silent> <ESC><ESC><ESC><ESC><ESC> :set mouse=i<cr>:set nonu<cr>:set nornu<cr>:set paste<cr>
 
 "-- minibufexpl setting --
 let g:miniBufExplMapWindowNavVim = 1
