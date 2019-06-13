@@ -95,10 +95,6 @@ nmap wm :WMToggle<cr>
 map <silent> <F5> :WMToggle<cr>:TagbarToggle<cr>
 imap <silent> <F5> <ESC>:WMToggle<cr>:TagbarToggle<cr>
 
-" copy or paste by system clippers
-nnoremap <silent> <ESC><ESC><ESC> :set mouse=a<cr>:set nu<cr>:set rnu<cr>:set nopaste<cr>
-nnoremap <silent> <ESC><ESC><ESC><ESC><ESC> :set mouse=i<cr>:set nonu<cr>:set nornu<cr>:set paste<cr>
-
 "-- minibufexpl setting --
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
