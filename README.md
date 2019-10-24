@@ -27,7 +27,7 @@ vim config for c/go coders
 * **Ctrl + i** 
 
 ## Auto Complete
-* **<Tab>**
+* **Tab**
 
 ## GoLang
 * [install gotags](https://github.com/jstemmer/gotags.git) and run `:GoInstallBinaries` in vim
