@@ -91,10 +91,6 @@ let g:persistentBehaviour=0
 let g:winManagerWidth=32
 nmap wm :WMToggle<cr>
 
-" developer tools
-map <silent> <F5> :WMToggle<cr>:TagbarToggle<cr>
-imap <silent> <F5> <ESC>:WMToggle<cr>:TagbarToggle<cr>
-
 "-- minibufexpl setting --
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
