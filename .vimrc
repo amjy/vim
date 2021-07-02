@@ -102,6 +102,9 @@ nnoremap <silent> bp :bp<Cr>
 nnoremap <silent> bb :b#<Cr>
 nmap <silent> Q :bd<Cr>:syn on<CR>bn
 
+"-- disable F1 help --
+map <F1> <Nop>
+
 "-- hightlight setting --
 noremap <silent> <F2> gd<C-o>
 inoremap <silent> <F2> <ESC> gd<C-o>
