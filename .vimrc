@@ -104,6 +104,7 @@ nmap <silent> Q :bd<Cr>:syn on<CR>bn
 
 "-- disable F1 help --
 map <F1> <Nop>
+imap <F1> <Nop>
 
 "-- hightlight setting --
 noremap <silent> <F2> gd<C-o>
